@@ -1,0 +1,15 @@
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhangqs0205/spring-cloud-demo.git
+          search-paths: configuration
+          username: zhangqs0205@126.com
+          password: zhqs0205
+          default-label: master
+  application:
+    name: config-server
+server:
+  port: 8888
